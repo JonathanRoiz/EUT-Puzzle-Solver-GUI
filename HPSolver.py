@@ -904,7 +904,7 @@ def hatch_puzzle(event=None):
                 data = str(entries[i][j].get()).strip()
                 values.append(data)
                 if not checkstop:
-                    if any(x in data for x in ['^', '+', '/']):
+                    if any(x in data for x in ['+', '/']):
                         puzzle = 4
                         checkstop = True
                     elif " " in data or "t" in data:
